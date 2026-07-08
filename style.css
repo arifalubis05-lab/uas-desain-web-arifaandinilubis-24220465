@@ -1,0 +1,344 @@
+/* ==========================================
+   RESET & FONTS
+   ========================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #2b2b2b;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-nav {
+    padding: 8px 18px;
+    background-color: #7dd3fc;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.hero-section {
+    background-color: #244b83; 
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content .avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #fde047;
+    padding: 4px;
+    margin-bottom: 20px;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #fde047;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   CERITA SINGKAT
+   ========================================== */
+.about-section {
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fde047; 
+    padding: 4px;
+    border: 3px solid #ffffff;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 650px; 
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 26px;
+    color: #0f172a;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    text-align: left; 
+}
+
+/* ==========================================
+   RIWAYAT PENDIDIKAN (PRESISI TENGAH & TEKS RATA KIRI)
+   ========================================== */
+.education-section {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+.education-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 26px;
+    color: #0f172a;
+}
+
+.education-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.education-card {
+    flex: 1;
+    background-color: #f1f5f9;
+    padding: 25px 20px;
+    border-radius: 8px;
+    
+    /* Mengaktifkan susunan flex vertikal agar semua konten presisi di tengah kotak */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.education-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    font-size: 18px;
+    color: #0f172a;
+    text-align: center;
+}
+
+.education-card h4 {
+    font-size: 14px;
+    color: #2563eb;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Mengatur teks deskripsi agar membentuk paragraf rata kiri di tengah kotak */
+.education-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #64748b;
+    text-align: left;         /* Teks dibuat rata kiri sesuai PDF */
+    max-width: 230px;         /* Membatasi lebar teks agar rapi memotong ke bawah */
+    width: 100%;
+}
+
+/* ==========================================
+   SOFTSKILL (PRESISI TENGAH & TEKS RATA KIRI)
+   ========================================== */
+.skill-section {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+.skill-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 26px;
+    color: #0f172a;
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.skill-card {
+    flex: 1;
+    background-color: #f1f5f9;
+    padding: 30px 20px;
+    border-radius: 8px;
+    
+    /* Mengaktifkan susunan flex vertikal agar semua konten presisi di tengah kotak */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Mengatur teks deskripsi agar membentuk paragraf rata kiri di tengah kotak */
+.skill-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #64748b;
+    text-align: left;         /* Teks dibuat rata kiri sesuai PDF */
+    max-width: 230px;         /* Membatasi lebar teks agar rapi memotong ke bawah */
+    width: 100%;
+}
+
+/* ==========================================
+   KONTAK & FOOTER
+   ========================================== */
+.footer-section {
+    background-color: #ffffff;
+    padding: 40px 8% 20px 8%;
+}
+
+.container-kontak {
+    background-color: #244b83;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.footer-left-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-icon-main {
+    width: 45px; 
+    height: 45px;
+    object-fit: contain;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.contact-info .phone {
+    font-size: 16px;
+    color: #fde047;
+    font-weight: bold;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #7dd3fc;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 2px solid #244b83;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #244b83; 
+    margin: 0 -10%;
+    padding-bottom: 15px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    .navbar, .about-container, .education-flex, .skill-flex, .container-kontak, .footer-left-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text h2, .about-text p, .education-card p, .skill-card p {
+        text-align: center;
+        max-width: 100%;
+    }
+    .navbar .nav-links {
+        margin: 15px 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
